@@ -34,7 +34,7 @@ export default function Home() {
           <button>Sign In with Google</button>
         </div>
         <div className="col-2">
-          <img src={deskImage} />
+          <img src={deskImage} alt="" />
         </div>
       </div>
     </main>
