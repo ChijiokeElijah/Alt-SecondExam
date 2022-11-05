@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: right;
+  background-color: rgb(47, 48, 49);
+  padding: 0.8rem;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.nav-link:hover {
+  color: rgb(219, 130, 13);
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-gap: 2px;
+  
+}
+.col-2{
+  flex-basis: 40%;
+  min-width: 300px;
+  margin: 15px ;
+}
+.col-2 img{
+  max-width: 75%;
+  padding: 40px 0;    
+}
+.question{
+  padding: 12px 0;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error img {
+  margin-top: 1.5rem;
+}
+
+.loader {
+  margin: 1rem;
+}
+
+.loader img {
+  width: 60%;
+}
+
+.paginate button {
+  width: 3rem;
+  padding: 5px;
+  background-color: rgb(94, 144, 214);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  border: 3px solid rgb(34, 33, 32);
+}
+.paginate button:hover {
+  background-color: rgb(28, 43, 63);
+}
+/* .paginate button:active{
+  background-color: red;
+} */
+
+[aria-disabled="true"] {
+  opacity: 0.2;
+}
+
+.data {
+  width: 30%;
+  border-radius: 0px;
+  background: #fff;
+  box-shadow:  7px 7px 14px #676767,
+             -7px -7px 14px #ffffff;   
+  margin: .5rem;
+  padding: 6px;
+}
+.img-div{
+  display: grid;
+  place-content: center;
+  
+}
+.data>img{
+  width: 200px;
+  height: 100px;
+
+
+}
+
+.data-info {
+  padding: 0 0 1rem 3rem;
+}
+
+.data-info p {
+  line-height: 1.2rem;
+  font-size: 12px ;
+}
+.info-name {
+  color: rgb(212, 0, 255);
+  font-weight: 700;
+}
