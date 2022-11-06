@@ -16,7 +16,7 @@ export default function Home() {
         <div className="col-2">
           <h1> ALTSCHOOL SCHOOL OF ENGINEERING</h1>
           <h2>SECOND SEMESTER EXAMINATION</h2>
-          <h3 className="question">QUESTION No. 4</h3>
+          <h3 className="question"> QUESTION No. 4</h3>
           <p>
             Set a firebase hosting and authentication using the Google
             Authentication method, and set up backend pagination using
