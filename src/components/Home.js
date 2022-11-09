@@ -2,8 +2,20 @@ import React from "react";
 import deskImage from "../images/image-hero-desktop.png";
 import "../App.css";
 import { Helmet } from "react-helmet-async";
+import { useNavigate} from 'react-router-dom'
+import {auth, provider, signInWithRedirect} from '../config/firebase'
 
 export default function Home() {
+  const navigate = useNavigate()
+
+  const handleSignIn = (event) =>{
+    event.preventDefault()
+    signInWithRedirect(auth, provider)
+    console.log('signed in')
+    // navigate('/users')
+  }
+
+
   return (
     
     <main className="main-container">
@@ -31,7 +43,7 @@ export default function Home() {
             description of the project and put the same link in the README of
             the project.
           </p>
-          <button>Sign In with Google</button>
+          <button onClick={handleSignIn}>Sign In with Google</button>
         </div>
         <div className="col-2">
           <img src={deskImage} alt="" />
