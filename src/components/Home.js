@@ -2,15 +2,15 @@ import React from "react";
 import deskImage from "../images/image-hero-desktop.png";
 import "../App.css";
 import { Helmet } from "react-helmet-async";
-import { useNavigate} from 'react-router-dom'
-import {auth, provider, signInWithRedirect} from '../config/firebase'
+// import { useNavigate} from 'react-router-dom'
+import {auth, provider, signInWithRedirect} from '../config'
 
 export default function Home() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  const handleSignIn = (event) =>{
+  const handleSignIn =  async (event) =>{
     event.preventDefault()
-    signInWithRedirect(auth, provider)
+    await signInWithRedirect(auth, provider)
     console.log('signed in')
     // navigate('/users')
   }
