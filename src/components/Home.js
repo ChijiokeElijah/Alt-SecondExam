@@ -2,17 +2,17 @@ import React from "react";
 import deskImage from "../images/image-hero-desktop.png";
 import "../App.css";
 import { Helmet } from "react-helmet-async";
-// import { useNavigate} from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import {auth, provider, signInWithRedirect} from '../config'
 
 export default function Home() {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const handleSignIn =  async (event) =>{
     event.preventDefault()
     await signInWithRedirect(auth, provider)
-    console.log('signed in')
-    // navigate('/users')
+    // console.log('signed in')
+    navigate('/users');
   }
 
 

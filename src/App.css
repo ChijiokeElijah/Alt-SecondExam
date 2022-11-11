@@ -116,3 +116,13 @@
   color: rgb(212, 0, 255);
   font-weight: 700;
 }
+button{
+  width: 150px;
+  height: 40px;
+  margin: 20px auto;
+  border: none;
+  color: #fff;
+  background-color: black;
+  border-radius: 18px;
+  
+}
